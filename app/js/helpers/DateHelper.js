@@ -1,7 +1,7 @@
 class DateHelper {
     constructor() { }
     static dateToText(data) {
-        var day = data.getDay();
+        var day = data.getDate();
         var month = (data.getMonth() + 1);
         var year = data.getFullYear();
         return `${day}/${month}/${year}`;
