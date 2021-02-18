@@ -23,7 +23,7 @@ class NegociacaoController {
     }
 
     private _updateList() {
-        this._negociacoesView.update(this._negociacoes);
+        this._negociacoesView.show(this._negociacoes);
     }
 
     private _criaNegociacao(): Negociacao {

@@ -15,7 +15,7 @@ class NegociacaoController {
         this._messageView.show(this._message);
     }
     _updateList() {
-        this._negociacoesView.update(this._negociacoes);
+        this._negociacoesView.show(this._negociacoes);
     }
     _criaNegociacao() {
         return new Negociacao(DateHelper.textToDate(this._inputData.value), parseFloat(this._inputQuantidade.value), parseFloat(this._inputValor.value));
