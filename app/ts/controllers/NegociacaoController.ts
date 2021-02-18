@@ -4,9 +4,9 @@ class NegociacaoController {
     private _inputQuantidade: HTMLInputElement;
     private _inputValor: HTMLInputElement;
     private _negociacoes: Negociacoes = new Negociacoes();
-    private _negociacoesView: NegociacaoView = new NegociacaoView('#negociacaoView');
+    private _negociacoesView: Views.NegociacaoView = new Views.NegociacaoView('#negociacaoView');
     private _message: Message = new Message();
-    private _messageView: MessageView = new MessageView('#messageView');
+    private _messageView: Views.MessageView = new Views.MessageView('#messageView');
 
     constructor() {
         let $ = document.querySelector.bind(document);

@@ -1,9 +1,9 @@
 class NegociacaoController {
     constructor() {
         this._negociacoes = new Negociacoes();
-        this._negociacoesView = new NegociacaoView('#negociacaoView');
+        this._negociacoesView = new Views.NegociacaoView('#negociacaoView');
         this._message = new Message();
-        this._messageView = new MessageView('#messageView');
+        this._messageView = new Views.MessageView('#messageView');
         let $ = document.querySelector.bind(document);
         this._inputData = $('#data');
         this._inputQuantidade = $('#quantidade');

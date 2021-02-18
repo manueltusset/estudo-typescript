@@ -1,14 +1,16 @@
-abstract class View<T> {
+namespace Views {
+    export abstract class View<T> {
 
-    protected _element: HTMLElement;
+        protected _element: HTMLElement;
 
-    constructor(selector: string) {
-        this._element = <HTMLElement>document.querySelector(selector);
-    }
+        constructor(selector: string) {
+            this._element = <HTMLElement>document.querySelector(selector);
+        }
 
-    abstract template(model: T): string;
+        abstract template(model: T): string;
 
-    show(model: T) {
-        this._element.innerHTML = this.template(model);
+        show(model: T) {
+            this._element.innerHTML = this.template(model);
+        }
     }
 }
